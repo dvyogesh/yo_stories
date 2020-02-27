@@ -2,6 +2,7 @@
   "name": "taskbox",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dvyogesh.github.io/yo_stories",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -18,7 +19,9 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,6 +44,7 @@
     "@storybook/addons": "^5.3.14",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.14",
-    "@storybook/storybook-deployer": "^2.8.2"
+    "@storybook/storybook-deployer": "^2.8.2",
+    "gh-pages": "^2.2.0"
   }
 }
