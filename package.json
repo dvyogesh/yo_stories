@@ -1,5 +1,5 @@
 {
-  "name": "taskbox",
+  "name": "yo_stories",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://dvyogesh.github.io/yo_stories",
@@ -20,7 +20,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "storybook-to-ghpages",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
